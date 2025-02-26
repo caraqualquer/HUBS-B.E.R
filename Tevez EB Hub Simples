@@ -1,0 +1,2524 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 123 | Scripts: 50 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.ScreenGui.TPFrame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["Visible"] = false;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["2"]["Size"] = UDim2.new(0, 204, 0, 229);
+G2L["2"]["Position"] = UDim2.new(0.07071, 0, 0.26626, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[TPFrame]];
+G2L["2"]["BackgroundTransparency"] = 0.1;
+
+
+-- StarterGui.ScreenGui.TPFrame.David
+G2L["3"] = Instance.new("TextButton", G2L["2"]);
+G2L["3"]["TextWrapped"] = true;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["TextScaled"] = true;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["Size"] = UDim2.new(0, 86, 0, 34);
+G2L["3"]["BackgroundTransparency"] = 1;
+G2L["3"]["Name"] = [[David]];
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[Goto David NPC]];
+G2L["3"]["Position"] = UDim2.new(0.27783, 0, 0.24557, 0);
+
+
+-- StarterGui.ScreenGui.TPFrame.David.AnimBTN
+G2L["4"] = Instance.new("LocalScript", G2L["3"]);
+G2L["4"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.TPFrame.TextLabel
+G2L["5"] = Instance.new("TextLabel", G2L["2"]);
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["TextScaled"] = true;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Size"] = UDim2.new(0, 170, 0, 37);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[TPNpcs]];
+
+
+-- StarterGui.ScreenGui.TPFrame.TextLabel
+G2L["6"] = Instance.new("TextLabel", G2L["2"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Size"] = UDim2.new(0, 204, 0, 28);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[discord.gg/VFRKD2UehC]];
+G2L["6"]["Position"] = UDim2.new(-0.00925, 0, 0.87338, 0);
+
+
+-- StarterGui.ScreenGui.TPFrame.FecharHubTP
+G2L["7"] = Instance.new("TextButton", G2L["2"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextScaled"] = true;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["Size"] = UDim2.new(0, 42, 0, 38);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Name"] = [[FecharHubTP]];
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[X]];
+G2L["7"]["Position"] = UDim2.new(0.78763, 0, -0.00334, 0);
+
+
+-- StarterGui.ScreenGui.TPFrame.FecharHubTP.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["7"]);
+
+
+
+-- StarterGui.ScreenGui.TPFrame.FecharHubTP.AnimBTN
+G2L["9"] = Instance.new("LocalScript", G2L["7"]);
+G2L["9"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.TPFrame.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.TPFrame.Gabriel
+G2L["b"] = Instance.new("TextButton", G2L["2"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 86, 0, 34);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Name"] = [[Gabriel]];
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Goto Gabriel NPC]];
+G2L["b"]["Position"] = UDim2.new(0.27783, 0, 0.39404, 0);
+
+
+-- StarterGui.ScreenGui.TPFrame.Gabriel.AnimBTN
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+G2L["c"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.TPFrame.Gavi
+G2L["d"] = Instance.new("TextButton", G2L["2"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["Size"] = UDim2.new(0, 86, 0, 34);
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["Name"] = [[Gavi]];
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Goto Gavi NPC]];
+G2L["d"]["Position"] = UDim2.new(0.27783, 0, 0.54252, 0);
+
+
+-- StarterGui.ScreenGui.TPFrame.Gavi.AnimBTN
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+G2L["e"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.TPFrame.Jao
+G2L["f"] = Instance.new("TextButton", G2L["2"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["Size"] = UDim2.new(0, 86, 0, 34);
+G2L["f"]["BackgroundTransparency"] = 1;
+G2L["f"]["Name"] = [[Jao]];
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[Goto Jao NPC]];
+G2L["f"]["Position"] = UDim2.new(0.27783, 0, 0.69099, 0);
+
+
+-- StarterGui.ScreenGui.TPFrame.Jao.AnimBTN
+G2L["10"] = Instance.new("LocalScript", G2L["f"]);
+G2L["10"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.TPFrame.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.TPFrame.UIStroke
+G2L["12"] = Instance.new("UIStroke", G2L["2"]);
+G2L["12"]["Thickness"] = 2;
+G2L["12"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.ScreenGui.TPFrame.UIStroke.UIGradient
+G2L["13"] = Instance.new("UIGradient", G2L["12"]);
+G2L["13"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 86, 0)),ColorSequenceKeypoint.new(0.349, Color3.fromRGB(86, 255, 0)),ColorSequenceKeypoint.new(0.403, Color3.fromRGB(23, 67, 189)),ColorSequenceKeypoint.new(0.588, Color3.fromRGB(15, 45, 211)),ColorSequenceKeypoint.new(0.769, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))};
+
+
+-- StarterGui.ScreenGui.TPFrame.UIStroke.UIGradient.LocalScript
+G2L["14"] = Instance.new("LocalScript", G2L["13"]);
+
+
+
+-- StarterGui.ScreenGui.TPFrame.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC
+G2L["16"] = Instance.new("Frame", G2L["1"]);
+G2L["16"]["Visible"] = false;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["16"]["Size"] = UDim2.new(0, 467, 0, 299);
+G2L["16"]["Position"] = UDim2.new(0.28558, 0, 0.24588, 0);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Name"] = [[discord.gg/VFRKD2UehC]];
+G2L["16"]["BackgroundTransparency"] = 0.1;
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.UIStroke
+G2L["17"] = Instance.new("UIStroke", G2L["16"]);
+G2L["17"]["Thickness"] = 2;
+G2L["17"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.UIStroke.UIGradient
+G2L["18"] = Instance.new("UIGradient", G2L["17"]);
+G2L["18"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 86, 0)),ColorSequenceKeypoint.new(0.349, Color3.fromRGB(86, 255, 0)),ColorSequenceKeypoint.new(0.403, Color3.fromRGB(23, 67, 189)),ColorSequenceKeypoint.new(0.588, Color3.fromRGB(15, 45, 211)),ColorSequenceKeypoint.new(0.769, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))};
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.UIStroke.UIGradient.LocalScript
+G2L["19"] = Instance.new("LocalScript", G2L["18"]);
+
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.LocalScript
+G2L["1a"] = Instance.new("LocalScript", G2L["16"]);
+
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TeleportBTN
+G2L["1b"] = Instance.new("TextButton", G2L["16"]);
+G2L["1b"]["TextWrapped"] = true;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["TextScaled"] = true;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(86, 255, 0);
+G2L["1b"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["Size"] = UDim2.new(0, 104, 0, 44);
+G2L["1b"]["Name"] = [[TeleportBTN]];
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[Teleport]];
+G2L["1b"]["Position"] = UDim2.new(0.06852, 0, 0.27425, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TeleportBTN.AnimBTN
+G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
+G2L["1c"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TeleportBTN.UICorner
+G2L["1d"] = Instance.new("UICorner", G2L["1b"]);
+G2L["1d"]["CornerRadius"] = UDim.new(0, 3);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TeleportBTN.LocalScript
+G2L["1e"] = Instance.new("LocalScript", G2L["1b"]);
+
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.UICorner
+G2L["1f"] = Instance.new("UICorner", G2L["16"]);
+
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TextLabel
+G2L["20"] = Instance.new("TextLabel", G2L["16"]);
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["TextScaled"] = true;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["BackgroundTransparency"] = 1;
+G2L["20"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[B.E.R Hub E.B Tevez]];
+G2L["20"]["Position"] = UDim2.new(0.2848, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-EB
+G2L["21"] = Instance.new("TextButton", G2L["16"]);
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["TextSize"] = 14;
+G2L["21"]["TextScaled"] = true;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 255);
+G2L["21"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["Size"] = UDim2.new(0, 104, 0, 44);
+G2L["21"]["Name"] = [[Removerportasentrada-EB]];
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[Remover portas entrada E.B]];
+G2L["21"]["Position"] = UDim2.new(0.38544, 0, 0.27425, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-EB.AnimBTN
+G2L["22"] = Instance.new("LocalScript", G2L["21"]);
+G2L["22"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-EB.UICorner
+G2L["23"] = Instance.new("UICorner", G2L["21"]);
+G2L["23"]["CornerRadius"] = UDim.new(0, 3);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-EB.LocalScript
+G2L["24"] = Instance.new("LocalScript", G2L["21"]);
+
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TextLabel
+G2L["25"] = Instance.new("TextLabel", G2L["16"]);
+G2L["25"]["TextWrapped"] = true;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextScaled"] = true;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["BackgroundTransparency"] = 1;
+G2L["25"]["Size"] = UDim2.new(0, 119, 0, 32);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[Portas VISUAL]];
+G2L["25"]["Position"] = UDim2.new(0.37045, 0, 0.16722, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TextLabel
+G2L["26"] = Instance.new("TextLabel", G2L["16"]);
+G2L["26"]["TextWrapped"] = true;
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["TextSize"] = 14;
+G2L["26"]["TextScaled"] = true;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["BackgroundTransparency"] = 1;
+G2L["26"]["Size"] = UDim2.new(0, 167, 0, 32);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Text"] = [[Teleportes]];
+G2L["26"]["Position"] = UDim2.new(0, 0, 0.16722, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TextButton
+G2L["27"] = Instance.new("TextButton", G2L["16"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["27"]["TextSize"] = 14;
+G2L["27"]["TextScaled"] = true;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27"]["Size"] = UDim2.new(0, 46, 0, 38);
+G2L["27"]["BackgroundTransparency"] = 1;
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[X]];
+G2L["27"]["Position"] = UDim2.new(0.9015, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TextButton.AnimBTN
+G2L["28"] = Instance.new("LocalScript", G2L["27"]);
+G2L["28"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TextButton.LocalScript
+G2L["29"] = Instance.new("LocalScript", G2L["27"]);
+
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-RT
+G2L["2a"] = Instance.new("TextButton", G2L["16"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["TextSize"] = 14;
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(92, 0, 0);
+G2L["2a"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a"]["Size"] = UDim2.new(0, 104, 0, 44);
+G2L["2a"]["Name"] = [[Removerportasentrada-RT]];
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Text"] = [[Remover portas entrada RT]];
+G2L["2a"]["Position"] = UDim2.new(0.38544, 0, 0.43478, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-RT.AnimBTN
+G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
+G2L["2b"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-RT.UICorner
+G2L["2c"] = Instance.new("UICorner", G2L["2a"]);
+G2L["2c"]["CornerRadius"] = UDim.new(0, 3);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-RT.LocalScript
+G2L["2d"] = Instance.new("LocalScript", G2L["2a"]);
+
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TextLabel
+G2L["2e"] = Instance.new("TextLabel", G2L["16"]);
+G2L["2e"]["TextWrapped"] = true;
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextSize"] = 14;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["BackgroundTransparency"] = 1;
+G2L["2e"]["Size"] = UDim2.new(0, 104, 0, 32);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[Aliança é aberto, então não precisa]];
+G2L["2e"]["Position"] = UDim2.new(0.38544, 0, 0.60535, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.PlayerTPBTN
+G2L["2f"] = Instance.new("TextButton", G2L["16"]);
+G2L["2f"]["TextWrapped"] = true;
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["TextSize"] = 14;
+G2L["2f"]["TextScaled"] = true;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(0, 86, 0);
+G2L["2f"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f"]["Size"] = UDim2.new(0, 104, 0, 44);
+G2L["2f"]["Name"] = [[PlayerTPBTN]];
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Text"] = [[PlayerTP]];
+G2L["2f"]["Position"] = UDim2.new(0.06852, 0, 0.43478, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.PlayerTPBTN.AnimBTN
+G2L["30"] = Instance.new("LocalScript", G2L["2f"]);
+G2L["30"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.PlayerTPBTN.UICorner
+G2L["31"] = Instance.new("UICorner", G2L["2f"]);
+G2L["31"]["CornerRadius"] = UDim.new(0, 3);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.PlayerTPBTN.LocalScript
+G2L["32"] = Instance.new("LocalScript", G2L["2f"]);
+
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TextLabel
+G2L["33"] = Instance.new("TextLabel", G2L["16"]);
+G2L["33"]["TextWrapped"] = true;
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["TextSize"] = 14;
+G2L["33"]["TextScaled"] = true;
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["BackgroundTransparency"] = 1;
+G2L["33"]["Size"] = UDim2.new(0, 109, 0, 32);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["Text"] = [[Teleportar para:]];
+G2L["33"]["Position"] = UDim2.new(0.64882, 0, 0.16722, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.EBBTN
+G2L["34"] = Instance.new("TextButton", G2L["16"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(86, 255, 0);
+G2L["34"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["Size"] = UDim2.new(0, 50, 0, 23);
+G2L["34"]["Name"] = [[EBBTN]];
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[EB]];
+G2L["34"]["Position"] = UDim2.new(0.71306, 0, 0.30769, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.EBBTN.AnimBTN
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+G2L["35"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.EBBTN.UICorner
+G2L["36"] = Instance.new("UICorner", G2L["34"]);
+G2L["36"]["CornerRadius"] = UDim.new(0, 3);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.ALBTN
+G2L["37"] = Instance.new("TextButton", G2L["16"]);
+G2L["37"]["TextWrapped"] = true;
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["TextSize"] = 14;
+G2L["37"]["TextScaled"] = true;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["37"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["37"]["Size"] = UDim2.new(0, 50, 0, 23);
+G2L["37"]["Name"] = [[ALBTN]];
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Text"] = [[AL]];
+G2L["37"]["Position"] = UDim2.new(0.71306, 0, 0.41806, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.ALBTN.AnimBTN
+G2L["38"] = Instance.new("LocalScript", G2L["37"]);
+G2L["38"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.ALBTN.UICorner
+G2L["39"] = Instance.new("UICorner", G2L["37"]);
+G2L["39"]["CornerRadius"] = UDim.new(0, 3);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.RTBTN
+G2L["3a"] = Instance.new("TextButton", G2L["16"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["TextSize"] = 14;
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(90, 0, 0);
+G2L["3a"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3a"]["Size"] = UDim2.new(0, 50, 0, 23);
+G2L["3a"]["Name"] = [[RTBTN]];
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[RT]];
+G2L["3a"]["Position"] = UDim2.new(0.71092, 0, 0.52843, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.RTBTN.AnimBTN
+G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
+G2L["3b"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.RTBTN.UICorner
+G2L["3c"] = Instance.new("UICorner", G2L["3a"]);
+G2L["3c"]["CornerRadius"] = UDim.new(0, 3);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.JoalheriaBTN
+G2L["3d"] = Instance.new("TextButton", G2L["16"]);
+G2L["3d"]["TextWrapped"] = true;
+G2L["3d"]["BorderSizePixel"] = 0;
+G2L["3d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3d"]["TextSize"] = 14;
+G2L["3d"]["TextScaled"] = true;
+G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["3d"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3d"]["Size"] = UDim2.new(0, 50, 0, 23);
+G2L["3d"]["Name"] = [[JoalheriaBTN]];
+G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3d"]["Text"] = [[Joalheria]];
+G2L["3d"]["Position"] = UDim2.new(0.71092, 0, 0.63545, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.JoalheriaBTN.AnimBTN
+G2L["3e"] = Instance.new("LocalScript", G2L["3d"]);
+G2L["3e"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.JoalheriaBTN.UICorner
+G2L["3f"] = Instance.new("UICorner", G2L["3d"]);
+G2L["3f"]["CornerRadius"] = UDim.new(0, 3);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.BancoBTN
+G2L["40"] = Instance.new("TextButton", G2L["16"]);
+G2L["40"]["TextWrapped"] = true;
+G2L["40"]["BorderSizePixel"] = 0;
+G2L["40"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["40"]["TextSize"] = 14;
+G2L["40"]["TextScaled"] = true;
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 0);
+G2L["40"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["40"]["Size"] = UDim2.new(0, 50, 0, 23);
+G2L["40"]["Name"] = [[BancoBTN]];
+G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Text"] = [[Banco]];
+G2L["40"]["Position"] = UDim2.new(0.71092, 0, 0.74916, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.BancoBTN.AnimBTN
+G2L["41"] = Instance.new("LocalScript", G2L["40"]);
+G2L["41"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.BancoBTN.UICorner
+G2L["42"] = Instance.new("UICorner", G2L["40"]);
+G2L["42"]["CornerRadius"] = UDim.new(0, 3);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.LojadeArmasBTN
+G2L["43"] = Instance.new("TextButton", G2L["16"]);
+G2L["43"]["TextWrapped"] = true;
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["TextSize"] = 14;
+G2L["43"]["TextScaled"] = true;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["43"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["43"]["Size"] = UDim2.new(0, 50, 0, 23);
+G2L["43"]["Name"] = [[LojadeArmasBTN]];
+G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["Text"] = [[Loja de armas]];
+G2L["43"]["Position"] = UDim2.new(0.71092, 0, 0.85619, 0);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.LojadeArmasBTN.AnimBTN
+G2L["44"] = Instance.new("LocalScript", G2L["43"]);
+G2L["44"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.LojadeArmasBTN.UICorner
+G2L["45"] = Instance.new("UICorner", G2L["43"]);
+G2L["45"]["CornerRadius"] = UDim.new(0, 3);
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.LocalScript
+G2L["46"] = Instance.new("LocalScript", G2L["16"]);
+
+
+
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.ImageLabel
+G2L["47"] = Instance.new("ImageLabel", G2L["16"]);
+G2L["47"]["BorderSizePixel"] = 0;
+G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["Image"] = [[rbxassetid://109888721725747]];
+G2L["47"]["Size"] = UDim2.new(0, 164, 0, 142);
+G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["47"]["BackgroundTransparency"] = 1;
+G2L["47"]["Position"] = UDim2.new(0.64882, 0, 0.30769, 0);
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema
+G2L["48"] = Instance.new("Frame", G2L["1"]);
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["48"]["Size"] = UDim2.new(0, 231, 0, 90);
+G2L["48"]["Position"] = UDim2.new(0.75482, 0, 0.75, 0);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Name"] = [[NotificacaoSistema]];
+G2L["48"]["BackgroundTransparency"] = 0.1;
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.UICorner
+G2L["49"] = Instance.new("UICorner", G2L["48"]);
+
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.UIStroke
+G2L["4a"] = Instance.new("UIStroke", G2L["48"]);
+G2L["4a"]["Thickness"] = 2;
+G2L["4a"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.UIStroke.UIGradient
+G2L["4b"] = Instance.new("UIGradient", G2L["4a"]);
+G2L["4b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 86, 0)),ColorSequenceKeypoint.new(0.349, Color3.fromRGB(86, 255, 0)),ColorSequenceKeypoint.new(0.403, Color3.fromRGB(23, 67, 189)),ColorSequenceKeypoint.new(0.588, Color3.fromRGB(15, 45, 211)),ColorSequenceKeypoint.new(0.769, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))};
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.UIStroke.UIGradient.LocalScript
+G2L["4c"] = Instance.new("LocalScript", G2L["4b"]);
+
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.TextLabel
+G2L["4d"] = Instance.new("TextLabel", G2L["48"]);
+G2L["4d"]["TextWrapped"] = true;
+G2L["4d"]["BorderSizePixel"] = 0;
+G2L["4d"]["TextSize"] = 14;
+G2L["4d"]["TextScaled"] = true;
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4d"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4d"]["BackgroundTransparency"] = 1;
+G2L["4d"]["Size"] = UDim2.new(0, 231, 0, 24);
+G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4d"]["Text"] = [[discord.gg/VFRKD2UehC]];
+G2L["4d"]["Position"] = UDim2.new(0, 0, 0.72664, 0);
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.TextLabel
+G2L["4e"] = Instance.new("TextLabel", G2L["48"]);
+G2L["4e"]["TextWrapped"] = true;
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["TextSize"] = 14;
+G2L["4e"]["TextScaled"] = true;
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["BackgroundTransparency"] = 1;
+G2L["4e"]["Size"] = UDim2.new(0, 231, 0, 24);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Text"] = [[Seu Script está carregando, aguarde...]];
+G2L["4e"]["Position"] = UDim2.new(0, 0, 0.35997, 0);
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.TextLabel.LocalScript
+G2L["4f"] = Instance.new("LocalScript", G2L["4e"]);
+
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.TextLabel.LocalScript.NotificaçaoOK - Dono do efeito sonoro nao encontrado
+G2L["50"] = Instance.new("Sound", G2L["4f"]);
+G2L["50"]["Name"] = [[NotificaçaoOK - Dono do efeito sonoro nao encontrado]];
+G2L["50"]["SoundId"] = [[rbxassetid://8486683243]];
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.TextLabel
+G2L["51"] = Instance.new("TextLabel", G2L["48"]);
+G2L["51"]["TextWrapped"] = true;
+G2L["51"]["BorderSizePixel"] = 0;
+G2L["51"]["TextSize"] = 14;
+G2L["51"]["TextScaled"] = true;
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["51"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["51"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["51"]["BackgroundTransparency"] = 1;
+G2L["51"]["Size"] = UDim2.new(0, 231, 0, 23);
+G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["Text"] = [[⚠️ NOTIFICAÇÃO ⚠️]];
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.notificaçaoframe
+G2L["52"] = Instance.new("Sound", G2L["48"]);
+G2L["52"]["Name"] = [[notificaçaoframe]];
+G2L["52"]["SoundId"] = [[rbxassetid://4590662766]];
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.SistemaNotificaçao
+G2L["53"] = Instance.new("LocalScript", G2L["48"]);
+G2L["53"]["Name"] = [[SistemaNotificaçao]];
+
+
+-- StarterGui.ScreenGui.NotificacaoSistema.AnimEntrando
+G2L["54"] = Instance.new("LocalScript", G2L["48"]);
+G2L["54"]["Name"] = [[AnimEntrando]];
+
+
+-- StarterGui.ScreenGui.ImageButton
+G2L["55"] = Instance.new("ImageButton", G2L["1"]);
+G2L["55"]["BorderSizePixel"] = 0;
+G2L["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["55"]["Image"] = [[rbxassetid://91991569962579]];
+G2L["55"]["Size"] = UDim2.new(0, 58, 0, 55);
+G2L["55"]["BackgroundTransparency"] = 1;
+G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["55"]["Visible"] = false;
+G2L["55"]["Position"] = UDim2.new(0.47291, 0, 0.07585, 0);
+
+
+-- StarterGui.ScreenGui.ImageButton.UICorner
+G2L["56"] = Instance.new("UICorner", G2L["55"]);
+
+
+
+-- StarterGui.ScreenGui.ImageButton.LocalScript
+G2L["57"] = Instance.new("LocalScript", G2L["55"]);
+
+
+
+-- StarterGui.ScreenGui.ImageButton.AbrirHubB.E.R
+G2L["58"] = Instance.new("LocalScript", G2L["55"]);
+G2L["58"]["Name"] = [[AbrirHubB.E.R]];
+
+
+-- StarterGui.ScreenGui.ImageButton.AnimBTN
+G2L["59"] = Instance.new("LocalScript", G2L["55"]);
+G2L["59"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame
+G2L["5a"] = Instance.new("Frame", G2L["1"]);
+G2L["5a"]["Visible"] = false;
+G2L["5a"]["BorderSizePixel"] = 0;
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["5a"]["Size"] = UDim2.new(0, 204, 0, 229);
+G2L["5a"]["Position"] = UDim2.new(0.74931, 0, 0.26626, 0);
+G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5a"]["Name"] = [[PlayerTPFrame]];
+G2L["5a"]["BackgroundTransparency"] = 0.1;
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.TPPlayerBTN
+G2L["5b"] = Instance.new("TextButton", G2L["5a"]);
+G2L["5b"]["TextWrapped"] = true;
+G2L["5b"]["BorderSizePixel"] = 0;
+G2L["5b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5b"]["TextSize"] = 14;
+G2L["5b"]["TextScaled"] = true;
+G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5b"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5b"]["Size"] = UDim2.new(0, 86, 0, 34);
+G2L["5b"]["BackgroundTransparency"] = 1;
+G2L["5b"]["Name"] = [[TPPlayerBTN]];
+G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["Text"] = [[Teleport]];
+G2L["5b"]["Position"] = UDim2.new(0.28763, 0, 0.61675, 0);
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.TPPlayerBTN.AnimBTN
+G2L["5c"] = Instance.new("LocalScript", G2L["5b"]);
+G2L["5c"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.TextLabel
+G2L["5d"] = Instance.new("TextLabel", G2L["5a"]);
+G2L["5d"]["TextWrapped"] = true;
+G2L["5d"]["BorderSizePixel"] = 0;
+G2L["5d"]["TextSize"] = 14;
+G2L["5d"]["TextScaled"] = true;
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5d"]["BackgroundTransparency"] = 1;
+G2L["5d"]["Size"] = UDim2.new(0, 170, 0, 37);
+G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["Text"] = [[PlayerTP]];
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.TextLabel
+G2L["5e"] = Instance.new("TextLabel", G2L["5a"]);
+G2L["5e"]["TextWrapped"] = true;
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["TextSize"] = 14;
+G2L["5e"]["TextScaled"] = true;
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["BackgroundTransparency"] = 1;
+G2L["5e"]["Size"] = UDim2.new(0, 204, 0, 28);
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["Text"] = [[discord.gg/VFRKD2UehC]];
+G2L["5e"]["Position"] = UDim2.new(-0.00925, 0, 0.87338, 0);
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.UICorner
+G2L["5f"] = Instance.new("UICorner", G2L["5a"]);
+
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.UIStroke
+G2L["60"] = Instance.new("UIStroke", G2L["5a"]);
+G2L["60"]["Thickness"] = 2;
+G2L["60"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.UIStroke.UIGradient
+G2L["61"] = Instance.new("UIGradient", G2L["60"]);
+G2L["61"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 86, 0)),ColorSequenceKeypoint.new(0.349, Color3.fromRGB(86, 255, 0)),ColorSequenceKeypoint.new(0.403, Color3.fromRGB(23, 67, 189)),ColorSequenceKeypoint.new(0.588, Color3.fromRGB(15, 45, 211)),ColorSequenceKeypoint.new(0.769, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))};
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.UIStroke.UIGradient.LocalScript
+G2L["62"] = Instance.new("LocalScript", G2L["61"]);
+
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.LocalScript
+G2L["63"] = Instance.new("LocalScript", G2L["5a"]);
+
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.FecharHubTP
+G2L["64"] = Instance.new("TextButton", G2L["5a"]);
+G2L["64"]["TextWrapped"] = true;
+G2L["64"]["BorderSizePixel"] = 0;
+G2L["64"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["64"]["TextSize"] = 14;
+G2L["64"]["TextScaled"] = true;
+G2L["64"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["64"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["64"]["Size"] = UDim2.new(0, 42, 0, 38);
+G2L["64"]["BackgroundTransparency"] = 1;
+G2L["64"]["Name"] = [[FecharHubTP]];
+G2L["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["64"]["Text"] = [[X]];
+G2L["64"]["Position"] = UDim2.new(0.78763, 0, -0.00334, 0);
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.FecharHubTP.LocalScript
+G2L["65"] = Instance.new("LocalScript", G2L["64"]);
+
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.FecharHubTP.AnimBTN
+G2L["66"] = Instance.new("LocalScript", G2L["64"]);
+G2L["66"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.PlayerTextBox
+G2L["67"] = Instance.new("TextBox", G2L["5a"]);
+G2L["67"]["Name"] = [[PlayerTextBox]];
+G2L["67"]["BorderSizePixel"] = 0;
+G2L["67"]["TextWrapped"] = true;
+G2L["67"]["TextSize"] = 14;
+G2L["67"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["TextScaled"] = true;
+G2L["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["67"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["67"]["Position"] = UDim2.new(0.0098, 0, 0.36681, 0);
+G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["67"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.PlayerTPFrame.PlayerTextBox.LocalScript
+G2L["68"] = Instance.new("LocalScript", G2L["67"]);
+
+
+
+-- StarterGui.ScreenGui.Key System
+G2L["69"] = Instance.new("Frame", G2L["1"]);
+G2L["69"]["Visible"] = false;
+G2L["69"]["BorderSizePixel"] = 0;
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(12, 12, 12);
+G2L["69"]["Size"] = UDim2.new(0, 427, 0, 162);
+G2L["69"]["Position"] = UDim2.new(0.29844, 0, 0.33537, 0);
+G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["Name"] = [[Key System]];
+G2L["69"]["BackgroundTransparency"] = 0.1;
+
+
+-- StarterGui.ScreenGui.Key System.UICorner
+G2L["6a"] = Instance.new("UICorner", G2L["69"]);
+
+
+
+-- StarterGui.ScreenGui.Key System.UIStroke
+G2L["6b"] = Instance.new("UIStroke", G2L["69"]);
+G2L["6b"]["Thickness"] = 2;
+G2L["6b"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.ScreenGui.Key System.UIStroke.UIGradient
+G2L["6c"] = Instance.new("UIGradient", G2L["6b"]);
+G2L["6c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 86, 0)),ColorSequenceKeypoint.new(0.349, Color3.fromRGB(86, 255, 0)),ColorSequenceKeypoint.new(0.403, Color3.fromRGB(23, 67, 189)),ColorSequenceKeypoint.new(0.588, Color3.fromRGB(15, 45, 211)),ColorSequenceKeypoint.new(0.769, Color3.fromRGB(0, 0, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))};
+
+
+-- StarterGui.ScreenGui.Key System.UIStroke.UIGradient.LocalScript
+G2L["6d"] = Instance.new("LocalScript", G2L["6c"]);
+
+
+
+-- StarterGui.ScreenGui.Key System.LocalScript
+G2L["6e"] = Instance.new("LocalScript", G2L["69"]);
+
+
+
+-- StarterGui.ScreenGui.Key System.FecharSistemadekey
+G2L["6f"] = Instance.new("TextButton", G2L["69"]);
+G2L["6f"]["TextWrapped"] = true;
+G2L["6f"]["BorderSizePixel"] = 0;
+G2L["6f"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["6f"]["TextSize"] = 14;
+G2L["6f"]["TextScaled"] = true;
+G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6f"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6f"]["Size"] = UDim2.new(0, 42, 0, 38);
+G2L["6f"]["BackgroundTransparency"] = 1;
+G2L["6f"]["Name"] = [[FecharSistemadekey]];
+G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6f"]["Text"] = [[X]];
+G2L["6f"]["Position"] = UDim2.new(0.90005, 0, -0.00334, 0);
+
+
+-- StarterGui.ScreenGui.Key System.FecharSistemadekey.LocalScript
+G2L["70"] = Instance.new("LocalScript", G2L["6f"]);
+
+
+
+-- StarterGui.ScreenGui.Key System.FecharSistemadekey.AnimBTN
+G2L["71"] = Instance.new("LocalScript", G2L["6f"]);
+G2L["71"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.Key System.LocalScript
+G2L["72"] = Instance.new("LocalScript", G2L["69"]);
+
+
+
+-- StarterGui.ScreenGui.Key System.TextBox
+G2L["73"] = Instance.new("TextBox", G2L["69"]);
+G2L["73"]["BorderSizePixel"] = 0;
+G2L["73"]["TextWrapped"] = true;
+G2L["73"]["TextSize"] = 14;
+G2L["73"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["73"]["TextScaled"] = true;
+G2L["73"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["73"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["73"]["PlaceholderText"] = [[-- Key]];
+G2L["73"]["Size"] = UDim2.new(0, 147, 0, 44);
+G2L["73"]["Position"] = UDim2.new(0.54098, 0, 0.3642, 0);
+G2L["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["73"]["Text"] = [[]];
+G2L["73"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Key System.GetKey
+G2L["74"] = Instance.new("TextButton", G2L["69"]);
+G2L["74"]["TextWrapped"] = true;
+G2L["74"]["BorderSizePixel"] = 0;
+G2L["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["74"]["TextSize"] = 14;
+G2L["74"]["TextScaled"] = true;
+G2L["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["74"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["74"]["Size"] = UDim2.new(0, 111, 0, 28);
+G2L["74"]["BackgroundTransparency"] = 1;
+G2L["74"]["Name"] = [[GetKey]];
+G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["74"]["Text"] = [[Pegar Key]];
+G2L["74"]["Position"] = UDim2.new(0.41452, 0, 0.74691, 0);
+
+
+-- StarterGui.ScreenGui.Key System.GetKey.AnimBTN
+G2L["75"] = Instance.new("LocalScript", G2L["74"]);
+G2L["75"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.Key System.GetKey.LocalScript
+G2L["76"] = Instance.new("LocalScript", G2L["74"]);
+
+
+
+-- StarterGui.ScreenGui.Key System.CheckKey
+G2L["77"] = Instance.new("TextButton", G2L["69"]);
+G2L["77"]["TextWrapped"] = true;
+G2L["77"]["BorderSizePixel"] = 0;
+G2L["77"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["77"]["TextSize"] = 14;
+G2L["77"]["TextScaled"] = true;
+G2L["77"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["77"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["77"]["Size"] = UDim2.new(0, 111, 0, 28);
+G2L["77"]["BackgroundTransparency"] = 1;
+G2L["77"]["Name"] = [[CheckKey]];
+G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["77"]["Text"] = [[Confirmar Key]];
+G2L["77"]["Position"] = UDim2.new(0.71429, 0, 0.74691, 0);
+
+
+-- StarterGui.ScreenGui.Key System.CheckKey.LocalScript
+G2L["78"] = Instance.new("LocalScript", G2L["77"]);
+
+
+
+-- StarterGui.ScreenGui.Key System.CheckKey.AnimBTN
+G2L["79"] = Instance.new("LocalScript", G2L["77"]);
+G2L["79"]["Name"] = [[AnimBTN]];
+
+
+-- StarterGui.ScreenGui.Key System.TextLabel
+G2L["7a"] = Instance.new("TextLabel", G2L["69"]);
+G2L["7a"]["TextWrapped"] = true;
+G2L["7a"]["BorderSizePixel"] = 0;
+G2L["7a"]["TextSize"] = 14;
+G2L["7a"]["TextScaled"] = true;
+G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["BackgroundTransparency"] = 1;
+G2L["7a"]["Size"] = UDim2.new(0, 376, 0, 19);
+G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7a"]["Text"] = [[Sistema de Key B.E.R (Brazil Exploits Roblox)]];
+G2L["7a"]["Position"] = UDim2.new(-0.11698, 0, 0.05239, 0);
+
+
+-- StarterGui.ScreenGui.Key System.TextLabel
+G2L["7b"] = Instance.new("TextLabel", G2L["69"]);
+G2L["7b"]["TextWrapped"] = true;
+G2L["7b"]["BorderSizePixel"] = 0;
+G2L["7b"]["TextSize"] = 14;
+G2L["7b"]["TextScaled"] = true;
+G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7b"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7b"]["BackgroundTransparency"] = 1;
+G2L["7b"]["Size"] = UDim2.new(0, 177, 0, 112);
+G2L["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7b"]["Text"] = [[Não tem a Key? Basta clicar em "Pegar Key" e entrar no servidor do Discord (já copia automaticamente)]];
+G2L["7b"]["Position"] = UDim2.new(-0.00222, 0, 0.22523, 0);
+
+
+-- StarterGui.ScreenGui.TPFrame.David.AnimBTN
+local function C_4()
+local script = G2L["4"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_4);
+-- StarterGui.ScreenGui.TPFrame.FecharHubTP.LocalScript
+local function C_8()
+local script = G2L["8"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end;
+task.spawn(C_8);
+-- StarterGui.ScreenGui.TPFrame.FecharHubTP.AnimBTN
+local function C_9()
+local script = G2L["9"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_9);
+-- StarterGui.ScreenGui.TPFrame.LocalScript
+local function C_a()
+local script = G2L["a"];
+	local screenGui = script.Parent
+	local teleportButtons = {
+		Gabriel = screenGui:WaitForChild("Gabriel"),
+		Gavi = screenGui:WaitForChild("Gavi"),
+		Jao = screenGui:WaitForChild("Jao"),
+		David = screenGui:WaitForChild("David")
+	}
+	
+	local function teleportToNpc(npcName)
+		local npcsFolder = workspace:FindFirstChild("Map"):FindFirstChild("Npcs")
+		if not npcsFolder then
+			warn("Pasta de NPCs não encontrada!")
+			return
+		end
+	
+		local npc = npcsFolder:FindFirstChild(npcName)
+		if not npc then
+			warn("NPC " .. npcName .. " não encontrado!")
+			return
+		end
+	
+		local player = game.Players.LocalPlayer
+		if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+			player.Character.HumanoidRootPart.CFrame = npc:FindFirstChild("HumanoidRootPart").CFrame
+		else
+			warn("Personagem do jogador não está carregado corretamente!")
+		end
+	end
+	
+	for npcName, button in pairs(teleportButtons) do
+		button.MouseButton1Click:Connect(function()
+			teleportToNpc(npcName)
+		end)
+	end
+end;
+task.spawn(C_a);
+-- StarterGui.ScreenGui.TPFrame.Gabriel.AnimBTN
+local function C_c()
+local script = G2L["c"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_c);
+-- StarterGui.ScreenGui.TPFrame.Gavi.AnimBTN
+local function C_e()
+local script = G2L["e"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_e);
+-- StarterGui.ScreenGui.TPFrame.Jao.AnimBTN
+local function C_10()
+local script = G2L["10"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_10);
+-- StarterGui.ScreenGui.TPFrame.UIStroke.UIGradient.LocalScript
+local function C_14()
+local script = G2L["14"];
+	local UIGradient = script.parent
+	while true do
+		UIGradient.Rotation += 1
+		wait()
+	end
+end;
+task.spawn(C_14);
+-- StarterGui.ScreenGui.TPFrame.LocalScript
+local function C_15()
+local script = G2L["15"];
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+end;
+task.spawn(C_15);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.UIStroke.UIGradient.LocalScript
+local function C_19()
+local script = G2L["19"];
+	local UIGradient = script.parent
+	while true do
+		UIGradient.Rotation += 1
+		wait()
+	end
+end;
+task.spawn(C_19);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.LocalScript
+local function C_1a()
+local script = G2L["1a"];
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+end;
+task.spawn(C_1a);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TeleportBTN.AnimBTN
+local function C_1c()
+local script = G2L["1c"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_1c);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TeleportBTN.LocalScript
+local function C_1e()
+local script = G2L["1e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TPFrame.Visible = true
+	end)
+end;
+task.spawn(C_1e);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-EB.AnimBTN
+local function C_22()
+local script = G2L["22"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_22);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-EB.LocalScript
+local function C_24()
+local script = G2L["24"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local map = workspace:FindFirstChild("Map")
+		local doors = map:FindFirstChild("Doors")
+		local doorseb = doors:FindFirstChild("EB - Graduado Door")
+		local doorsebvip = doors:FindFirstChild("EB - VipDoor")
+		doorseb:Destroy()
+		doorsebvip:Destroy()
+	end)
+end;
+task.spawn(C_24);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TextButton.AnimBTN
+local function C_28()
+local script = G2L["28"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_28);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.TextButton.LocalScript
+local function C_29()
+local script = G2L["29"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.ImageButton.Visible = true
+	end)
+end;
+task.spawn(C_29);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-RT.AnimBTN
+local function C_2b()
+local script = G2L["2b"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_2b);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.Removerportasentrada-RT.LocalScript
+local function C_2d()
+local script = G2L["2d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local map = workspace:FindFirstChild("Map")
+		local doors = map:FindFirstChild("Doors")
+		local doorsrt = doors:FindFirstChild("RT - Graduado Door")
+		local doorrtvip = doors:FindFirstChild("RT - VipDoor")
+		doorsrt:Destroy()
+		doorrtvip:Destroy()
+	end)
+end;
+task.spawn(C_2d);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.PlayerTPBTN.AnimBTN
+local function C_30()
+local script = G2L["30"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_30);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.PlayerTPBTN.LocalScript
+local function C_32()
+local script = G2L["32"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.PlayerTPFrame.Visible = true
+	end)
+end;
+task.spawn(C_32);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.EBBTN.AnimBTN
+local function C_35()
+local script = G2L["35"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_35);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.ALBTN.AnimBTN
+local function C_38()
+local script = G2L["38"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_38);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.RTBTN.AnimBTN
+local function C_3b()
+local script = G2L["3b"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_3b);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.JoalheriaBTN.AnimBTN
+local function C_3e()
+local script = G2L["3e"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_3e);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.BancoBTN.AnimBTN
+local function C_41()
+local script = G2L["41"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_41);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.LojadeArmasBTN.AnimBTN
+local function C_44()
+local script = G2L["44"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_44);
+-- StarterGui.ScreenGui.discord.gg/VFRKD2UehC.LocalScript
+local function C_46()
+local script = G2L["46"];
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	
+	local function teleportTo(pos)
+		local character = player.Character or player.CharacterAdded:Wait()
+		local hrp = character:WaitForChild("HumanoidRootPart")
+		hrp.CFrame = CFrame.new(pos)
+	end
+	
+	local lojaDeArmasBtn    = script.Parent:WaitForChild("LojadeArmasBTN")
+	local joalheriaBtn       = script.Parent:WaitForChild("JoalheriaBTN")
+	local bancoBtn           = script.Parent:WaitForChild("BancoBTN")
+	local rtBtn              = script.Parent:WaitForChild("RTBTN")
+	local ebBtn              = script.Parent:WaitForChild("EBBTN")
+	local alBtn              = script.Parent:WaitForChild("ALBTN")
+	
+	
+	lojaDeArmasBtn.MouseButton1Click:Connect(function()
+		teleportTo(Vector3.new(-137.1067657470703, 66.57666015625, 495.6312255859375))
+	end)
+	
+	joalheriaBtn.MouseButton1Click:Connect(function()
+		teleportTo(Vector3.new(-145.62442016601562, 77.4462890625, 266.23175048828125))
+	end)
+	
+	bancoBtn.MouseButton1Click:Connect(function()
+		teleportTo(Vector3.new(68.91356658935547, 86.39857482910156, 6.84271240234375))
+	end)
+	
+	rtBtn.MouseButton1Click:Connect(function()
+		teleportTo(Vector3.new(505.0269775390625, 69.65238189697266, 201.3291778564453))
+	end)
+	
+	ebBtn.MouseButton1Click:Connect(function()
+		teleportTo(Vector3.new(34.68851089477539, 82.96578979492188, 915.21630859375))
+	end)
+	
+	alBtn.MouseButton1Click:Connect(function()
+		teleportTo(Vector3.new(-999.528564453125, 126.30377960205078, 602.5100708007812))
+	end)
+	
+end;
+task.spawn(C_46);
+-- StarterGui.ScreenGui.NotificacaoSistema.UIStroke.UIGradient.LocalScript
+local function C_4c()
+local script = G2L["4c"];
+	local UIGradient = script.parent
+	while true do
+		UIGradient.Rotation += 1
+		wait()
+	end
+end;
+task.spawn(C_4c);
+-- StarterGui.ScreenGui.NotificacaoSistema.TextLabel.LocalScript
+local function C_4f()
+local script = G2L["4f"];
+	wait(5)
+	script.Parent.Text = "Script carregado! Aproveite :)"
+	script["NotificaçaoOK - Dono do efeito sonoro nao encontrado"].Playing = true
+	wait(2)
+	local TweenService = game:GetService("TweenService")
+	local notification = script.Parent.Parent
+	
+	local exitPosition = UDim2.new(1.1, 0, 0.1, 0) 
+	
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	local tween = TweenService:Create(notification, tweenInfo, {Position = exitPosition})
+	tween:Play()
+	wait(1)
+end;
+task.spawn(C_4f);
+-- StarterGui.ScreenGui.NotificacaoSistema.SistemaNotificaçao
+local function C_53()
+local script = G2L["53"];
+	script.Parent["notificaçaoframe"].Playing = true
+end;
+task.spawn(C_53);
+-- StarterGui.ScreenGui.NotificacaoSistema.AnimEntrando
+local function C_54()
+local script = G2L["54"];
+	local TweenService = game:GetService("TweenService")
+	local notification = script.Parent
+	
+	local targetPosition = UDim2.new(0.8, 0, 0.1, 0)  
+	local startPosition = UDim2.new(1.1, 0, 0.1, 0)    
+	
+	notification.Position = startPosition
+	
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local tween = TweenService:Create(notification, tweenInfo, {Position = targetPosition})
+	tween:Play()
+	
+end;
+task.spawn(C_54);
+-- StarterGui.ScreenGui.ImageButton.LocalScript
+local function C_57()
+local script = G2L["57"];
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+end;
+task.spawn(C_57);
+-- StarterGui.ScreenGui.ImageButton.AbrirHubB.E.R
+local function C_58()
+local script = G2L["58"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent["discord.gg/VFRKD2UehC"].Visible = true
+	end)
+	
+end;
+task.spawn(C_58);
+-- StarterGui.ScreenGui.ImageButton.AnimBTN
+local function C_59()
+local script = G2L["59"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_59);
+-- StarterGui.ScreenGui.PlayerTPFrame.TPPlayerBTN.AnimBTN
+local function C_5c()
+local script = G2L["5c"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_5c);
+-- StarterGui.ScreenGui.PlayerTPFrame.UIStroke.UIGradient.LocalScript
+local function C_62()
+local script = G2L["62"];
+	local UIGradient = script.parent
+	while true do
+		UIGradient.Rotation += 1
+		wait()
+	end
+end;
+task.spawn(C_62);
+-- StarterGui.ScreenGui.PlayerTPFrame.LocalScript
+local function C_63()
+local script = G2L["63"];
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+end;
+task.spawn(C_63);
+-- StarterGui.ScreenGui.PlayerTPFrame.FecharHubTP.LocalScript
+local function C_65()
+local script = G2L["65"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end;
+task.spawn(C_65);
+-- StarterGui.ScreenGui.PlayerTPFrame.FecharHubTP.AnimBTN
+local function C_66()
+local script = G2L["66"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_66);
+-- StarterGui.ScreenGui.PlayerTPFrame.PlayerTextBox.LocalScript
+local function C_68()
+local script = G2L["68"];
+	local Players = game:GetService("Players")
+	local localPlayer = Players.LocalPlayer
+	
+	local frame = script.Parent.Parent
+	local textBox = frame:WaitForChild("PlayerTextBox")         
+	local teleportButton = frame:WaitForChild("TPPlayerBTN")  
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local input = textBox.Text
+		if #input < 1 then return end  
+	
+		for _, plr in ipairs(Players:GetPlayers()) do
+			local name = plr.Name
+			if string.sub(name, 1, 5) == string.sub(input, 1, 5) then
+				textBox.Text = name  
+				break
+			end
+		end
+	end)
+	
+	
+	teleportButton.MouseButton1Click:Connect(function()
+		local targetName = textBox.Text
+		local targetPlayer = Players:FindFirstChild(targetName)
+	
+		if not targetPlayer then
+			textBox.Text = "Jogador não encontrado"
+			return
+		end
+	
+		if localPlayer.Character and targetPlayer.Character then
+			local hrp1 = localPlayer.Character:WaitForChild("HumanoidRootPart")
+			local hrp2 = targetPlayer.Character:WaitForChild("HumanoidRootPart")
+	
+			hrp1.CFrame = hrp2.CFrame * CFrame.new(0, 0, -5)
+			hrp1.CFrame = CFrame.new(hrp1.Position, hrp2.Position)
+		else
+			textBox.Text = "Personagem não encontrado"
+		end
+	end)
+	
+end;
+task.spawn(C_68);
+-- StarterGui.ScreenGui.Key System.UIStroke.UIGradient.LocalScript
+local function C_6d()
+local script = G2L["6d"];
+	local UIGradient = script.parent
+	while true do
+		UIGradient.Rotation += 1
+		wait()
+	end
+end;
+task.spawn(C_6d);
+-- StarterGui.ScreenGui.Key System.LocalScript
+local function C_6e()
+local script = G2L["6e"];
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+end;
+task.spawn(C_6e);
+-- StarterGui.ScreenGui.Key System.FecharSistemadekey.LocalScript
+local function C_70()
+local script = G2L["70"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end;
+task.spawn(C_70);
+-- StarterGui.ScreenGui.Key System.FecharSistemadekey.AnimBTN
+local function C_71()
+local script = G2L["71"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_71);
+-- StarterGui.ScreenGui.Key System.LocalScript
+local function C_72()
+local script = G2L["72"];
+	wait(9)
+	local TweenService = game:GetService("TweenService")
+	local frame = script.Parent  
+	
+	frame.Visible = true
+	frame.BackgroundTransparency = 1
+	
+	local tweenInfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local tween = TweenService:Create(frame, tweenInfo, {BackgroundTransparency = 0})
+	
+	tween:Play()
+	
+	
+end;
+task.spawn(C_72);
+-- StarterGui.ScreenGui.Key System.GetKey.AnimBTN
+local function C_75()
+local script = G2L["75"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_75);
+-- StarterGui.ScreenGui.Key System.GetKey.LocalScript
+local function C_76()
+local script = G2L["76"];
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard("discord.gg/VFRKD2UehC")
+	end)
+end;
+task.spawn(C_76);
+-- StarterGui.ScreenGui.Key System.CheckKey.LocalScript
+local function C_78()
+local script = G2L["78"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local textbox = script.Parent.Parent.TextBox
+		if textbox.Text == "L3K4P5m2N1" then
+			script.Parent.Parent.Visible = false
+			script.Parent.Parent.Parent["discord.gg/VFRKD2UehC"].Visible = true
+		end
+	end)
+end;
+task.spawn(C_78);
+-- StarterGui.ScreenGui.Key System.CheckKey.AnimBTN
+local function C_79()
+local script = G2L["79"];
+	local TweenService = game:GetService("TweenService")
+	local button = script.Parent
+	local originalSize = button.Size
+	
+	local pressTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local releaseTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local hoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local unhoverTweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local pressedSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset - 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset - 5
+	)
+	local hoverSize = UDim2.new(
+		originalSize.X.Scale,
+		originalSize.X.Offset + 5,
+		originalSize.Y.Scale,
+		originalSize.Y.Offset + 5
+	)
+	
+	button.MouseButton1Down:Connect(function()
+		local pressTween = TweenService:Create(button, pressTweenInfo, {Size = pressedSize})
+		pressTween:Play()
+	end)
+	
+	button.MouseButton1Up:Connect(function()
+		local releaseTween = TweenService:Create(button, releaseTweenInfo, {Size = originalSize})
+		releaseTween:Play()
+	end)
+	
+	button.MouseEnter:Connect(function()
+		local hoverTween = TweenService:Create(button, hoverTweenInfo, {Size = hoverSize})
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		local unhoverTween = TweenService:Create(button, unhoverTweenInfo, {Size = originalSize})
+		unhoverTween:Play()
+	end)
+	
+end;
+task.spawn(C_79);
+
+return G2L["1"], require;
